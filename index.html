@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/logo.jpg">
+    <title>Продаж автобусних квитків онлайн</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.jpg" alt="Логотип сайту - літера А">  
+        <h1>AVTOBUS.UA</h1>
+    </header>
+<nav>
+    <ul>
+        <li>Головна</li>
+        <li>Популярні рейси</li>
+        <li>Відгуки</li>
+        <li>Зворотній зв'язок</li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Придбати квиток на автобус</h2>
+        <img src="img/bus.png" alt="Автобус">
+        <form name="search-tickets"> 
+        <label for="departure">Відправлення: </label>
+            <select id="departure">
+                <option> Київ</option>
+                <option> Берлін</option>
+                <option> Краків</option>
+            </select>
+            <br>
+            <label for="arrival">Прибуття: </label>
+            <select id="arrival">
+                <option> Київ</option>
+                <option> Берлін</option>
+                <option> Краків</option>
+            </select>
+            <br>
+            <label for="date-tickets">Введіть дату:</label>
+            <input type="date" id="date-tickets" required>
+            <br>
+            <input type="submit" value="Пошук квитків">
+        </form>
+    </section>
+    <section>
+        <h2>Популярні рейси</h2>
+        <form name="buy-popular-tickets">
+            <label> 
+                <input type="radio" name="destination" value="destination-kyiv-berlin" checked> Київ - Берлін 550 грн
+            </label>
+            <br>
+            <label> 
+                <input type="radio" name="destination" value="destination-kyiv-warszawa"> Київ - Варшава 350 грн
+            </label>
+            <br>        
+            <label> 
+                <input type="radio" name="destination" value="destination-kyiv-krakow"> Київ - Краків 300 грн
+            </label>
+            <br>
+            <label> 
+                <input type="radio" name="destination" value="destination-kyiv-lviv"> Київ - Львів 150 грн
+            </label>
+            <br>
+            <label for="date-popular-tickets">Введіть дату:</label>
+            <input type="date" id="date-popular-tickets" required>
+            <br>
+            <input type="submit" value="Пошук квитків">
+        </form>
+    </section>
+    <section>
+        <h2>Ласкаво просимо на наш сайт!</h2>
+        <p>Наш сайт є сервісом з продажу електронних квитків на автобусні рейси в Україні і в деяких сусідніх країнах. 
+        Для нас важливо надавати своїм клієнтам простий і зручний сервіс пошуку і покупки найдешевших квитків.</p>
+    </section>
+    <section>
+        <h2>Відгуки наших клієнтів</h2>
+        <p>Зручний сервіс, дешево, все сподобалося. Можна поїхати в будь-якому напрямку</p>
+        <br>
+        <p>~~ Андрій</p>
+    </section>
+    <section>
+        <h2>У Вас залишились питання?</h2>
+        <p> Напишіть нам на info@avtobus.ua!</p>
+        <p>Або зателефонуйте: +380440400400!</p>
+
+        <form  action="https://formspree.io/xzbvlozk"  method="POST">
+            <label>
+               Прізвище, ім'я клієнта:
+               <input type="text" name ="client-name" placeholder="Ваше ім'я" required>
+            </label>
+            <br>
+            <label>
+              Пошта клієнта:
+              <input type="email" name="client-email" placeholder="Ваша e-mail адреса" required>
+            </label>
+            <br>
+            <textarea name="message"  cols="30" rows="10" placeholder="Введіть Ваше повідомлення..." required></textarea>
+            <br>
+            <input type="submit" value="Надіслати"> 
+            <input type="reset" value="Скинути">
+        </form>
+    </section>
+</main>
+<footer>
+   
+    <a href="https://facebook.com"><img src="img/facebook-logo.png" alt="логотип facebook"></a>
+    <a href="https://instagram.com"><img src="img/instagram-logo.png" alt="логотип instagram"></a>
+    <a href="https://youtube.com"><img src="img/youtube-logo.png" alt="логотип youtube"></a>
+    <p>©Авторські права ..., 2020. Всі права захищені.</p>
+</footer>
+</body>
+</html>
